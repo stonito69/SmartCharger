@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView 
+        android:src="@drawable/splash_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/top_margin"
+        />
+    <TextView
+        android:text="@string/title_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal" 
+            android:layout_marginTop="@dimen/top_margin"
+    />
+    
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="18.0dp"
+        android:id="@+id/seekFrom" />
+    <TextView
+        android:text="@string/range"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/textRange" />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekTo" />
+
+    <TextView
+        android:text="@string/ping_interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal" 
+
+    />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pingMinutes"
+        android:min="1"
+        android:max="60"
+        />
+
+    <TextView
+        android:text="@string/ping"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/textPing" />
+
+    <Button
+        android:id="@+id/MyButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_changes"
+    />
+    
+ <LinearLayout 
+    android:layout_height="wrap_content" 
+    android:layout_width="match_parent" 
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:padding="@dimen/right_padding">
+    <Button 
+        android:id="@+id/switch_on" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_weight="1" 
+        android:text="@string/switch_on">
+    </Button>
+    <Button 
+        android:id="@+id/switch_off" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:layout_weight="1" 
+        android:text="@string/switch_off">
+    </Button>
+               
+</LinearLayout>
+    <TextView
+        android:text="@string/not_connected"
+        android:gravity="bottom|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/left_padding"
+        android:id="@+id/textStatus"
+    />
+ </LinearLayout>
+    
